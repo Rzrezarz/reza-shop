@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reza Shop - Gaming Laptops</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+
+        /* استایل منو */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #222;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #00ff00;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #444;
+        }
+
+        /* استایل بنر */
+        .banner {
+            background-image: url('https://i.imgur.com/cHsU6Yf.jpeg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .banner h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .banner p {
+            font-size: 1.5em;
+        }
+
+        /* استایل بخش محصولات */
+        .products {
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            background-color: #333;
+            border: 1px solid #444;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .product p {
+            color: #bbb;
+            font-size: 1.2em;
+        }
+
+        .product button {
+            background-color: #00ff00;
+            color: #222;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .product button:hover {
+            background-color: #0f0;
+        }
+
+        /* استایل فوتر */
+        .footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+        }
+
+        /* استایل برای ریسپانسیو */
+        @media (max-width: 768px) {
+            .products {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- منو -->
+    <div class="navbar">
+        <h1>Reza Shop</h1>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">About Us</a>
+        </div>
+    </div>
+
+    <!-- بنر -->
+    <div class="banner">
+        <h1 style="color: #00ff00; border: #1a1a1a;">Welcome to Reza Shop</h1>
+        <p style="color: #00ff00; border: 1px #1a1a1a;">Your one-stop shop for gaming laptops</p>
+    </div>
+
+    <!-- محصولات -->
+    <div class="products">
+        <!-- لپ‌تاپ‌های گیمینگ -->
+        <div class="product">
+            <img src="https://cdn.wccftech.com/wp-content/uploads/2020/04/Razer-Blade-15-Adv-FHD-E-2020-Render-14-1480x833.png" alt="Razer Blade 15">
+            <h3>Razer Blade 15</h3>
+            <p>Price: £1,499</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product">
+            <img src="https://dlcdnwebimgs.asus.com/gain/67D69C31-380C-48A0-89BF-5E0350891DE2" alt="ASUS ROG Zephyrus G14">
+            <h3>ASUS ROG Zephyrus G14</h3>
+            <p>Price: £1,299</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2021/3/ND/ZF/LJ/120561579/acer-predator-helios-300-gaming-laptop.png" alt="Acer Predator Helios 300">
+            <h3>Acer Predator Helios 300</h3>
+            <p>Price: £1,099</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product">
+            <img src="https://storage-asset.msi.com/global/picture/image/feature/nb/GS66-76/images/GS66-D1.png" alt="MSI GS66 Stealth">
+            <h3>MSI GS66 Stealth</h3>
+            <p>Price: £1,499</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://www.professionalwireless.com.co/wp-content/uploads/2022/11/TUF-Gaming-F15-TUF506HE-DS74_2.png" alt="ASUS TUF GAMING">
+            <h3>ASUS TUF GAMING</h3>
+            <p>Price: £1,299</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product">
+            <img src="https://media.croma.com/image/upload/v1663415318/Croma%20Assets/Computers%20Peripherals/Laptop/Images/245228_0_uyb1zl.png" alt="Mac Book Pro 2020">
+            <h3>Mac Book Pro 2020</h3>
+            <p>Price: £999</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin: 20px 0;">
+        <div id="more" style="background-color: #00ff00; color: #444; padding: 5px 10px; text-align: center; cursor: pointer; display: inline-block; border-radius: 8px; border: 1px solid #444;" onclick="window.location.href='products.html'">
+            more
+        </div>
+    </div>
+
+    <!-- فوتر -->
+    <div class="footer">
+        <p>&copy; 2024 Reza Shop. All rights reserved.</p>
+    </div>
+
+</body>
+
+</html>
